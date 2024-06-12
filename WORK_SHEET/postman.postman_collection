@@ -1,0 +1,493 @@
+{
+	"info": {
+		"_postman_id": "f32ff45b-cfd6-40d0-92c7-dc03252089fc",
+		"name": "Test Backend JMTT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30356476"
+	},
+	"item": [
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Get All Employee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/employee",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/employee/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nik\": \"11636\",\r\n    \"name\": \"Jack\",\r\n    \"is_active\": 1,\r\n    \"start_date\": \"2024-06-11\",\r\n    \"end_date\": \"2029-06-11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/employee",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Employee",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nik\": \"11636\",\r\n    \"name\": \"John Doe\",\r\n    \"is_active\": 1,\r\n    \"start_date\": \"2024-06-11\",\r\n    \"end_date\": \"2030-06-11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/employee/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Employee",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/employee/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EmployeeProfile",
+			"item": [
+				{
+					"name": "Get All Employee Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/employeeProfile",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employeeProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/employeeProfile/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employeeProfile",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Employee Profile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\": 4,\r\n    \"place_of_birth\": \"Jakarta\",\r\n    \"date_of_birth\": \"1997-05-01\",\r\n    \"gender\": \"Laki-Laki\",\r\n    \"is_married\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/employeeProfile",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employeeProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Employe Profile",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\": 4,\r\n    \"place_of_birth\": \"Medan\",\r\n    \"date_of_birth\": \"1995-05-01\",\r\n    \"gender\": \"Laki-Laki\",\r\n    \"is_married\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/employeeProfile/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employeeProfile",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Employee Profile",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/employeeProfile/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employeeProfile",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee Education",
+			"item": [
+				{
+					"name": "Get All Education",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/education",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"education"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Education",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/education/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"education",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Education",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\": 4,\r\n    \"name\": \"Binus\",\r\n    \"level\": \"Strata 1\",\r\n    \"description\": \"Sarjana\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/education",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"education"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Education",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\": 4,\r\n    \"name\": \"Binus University\",\r\n    \"level\": \"Strata 1\",\r\n    \"description\": \"Sarjana\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/education/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"education",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Education",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/education/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"education",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee Family",
+			"item": [
+				{
+					"name": "Get All Employee Family",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/employeeFamily",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employeeFamily"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee Family",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/employeeFamily/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employeeFamily",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Employee Family",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\": 4,\r\n    \"name\": \"Mari\",\r\n    \"identifier\": \"32100594109960003\",\r\n    \"job\": \"Ibu Rumah Tangga\",\r\n    \"place_of_birth\": \"Bekasi\",\r\n    \"date_of_birth\": \"1996-10-16\",\r\n    \"religion\": \"Islam\",\r\n    \"is_life\": 1,\r\n    \"is_divorced\": 0,\r\n    \"relation_status\": \"Istri\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/employeeFamily",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employeeFamily"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Employee Family",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\": 4,\r\n    \"name\": \"Marie\",\r\n    \"identifier\": \"32100594109960003\",\r\n    \"job\": \"Karyawan\",\r\n    \"place_of_birth\": \"Jakarta\",\r\n    \"date_of_birth\": \"1996-10-16\",\r\n    \"religion\": \"Islam\",\r\n    \"is_life\": 1,\r\n    \"is_divorced\": 0,\r\n    \"relation_status\": \"Istri\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/employeeFamily/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employeeFamily",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Employee Family",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/employeeFamily/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employeeFamily",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EmployeeData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/employeeData/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employeeData",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
